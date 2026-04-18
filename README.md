@@ -13,3 +13,8 @@ Production-grade e-commerce REST API built with Node.js + Express.
 npm install
 npm start
 ```
+
+## v3.2.0 Release Notes
+- Login API with JWT auth
+- Payment null cart fix
+- Product search feature
