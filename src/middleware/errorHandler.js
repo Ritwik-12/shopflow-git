@@ -1,6 +1,6 @@
 // Global error handler middleware
 const errorHandler = (err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).json({ error: 'Internal Server Error', message: err.message });
+  res.status(500).json({ error: 'Server Error Occured', message: err.message });
 };
 module.exports = errorHandler;
