@@ -10,9 +10,11 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   const product = await ProductService.getById(req.params.id);
   console.log("Error handler for new product addition");
-  console.log(error ocurred insdie products");
+  console.log("eror ocurred insdie products for new product addition");
   if (!product) return res.status(404).json({ error: 'Product not found' });
   res.json(product);
+  console.log("new product has been added");
+
 });
 
 module.exports = router;
